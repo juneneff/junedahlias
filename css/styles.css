@@ -194,6 +194,64 @@ figcaption {
 	padding: 2%;
 	
 }
+
+/*CHAPTER 4 Style for loop*/
+#answer {
+	margin: 0 0 0 40%;
+	text-align: center;
+	width: 20%;
+	background-color: rgba(223, 233, 225, 0.5);
+	border-top: 3px solid #ffff99;
+	border-bottom: 3px solid #ffff99;
+	padding: 2%;
+	
+}
+
+/*CHAPTER 5 Style for list selectors*/
+
+
+
+/*CHAPTER6 Style for forms*/
+fieldset, input, select, textarea {
+	font-family: 'Source Code Pro', mono space;
+	font-weight: bold;
+	background-color: rgba(223, 233, 225, 0.5);
+	border: none;
+	border-top: 3px solid #ffff99;
+	border-bottom: 3px solid #ffff99;
+	
+}
+
+fieldset em {
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+label {
+	display: block;
+	padding-top: 2%;
+}
+
+fieldset legend {
+	font-weight: bold;
+	font-size: 1.75em;
+	text-align: center;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+
+input {
+	border: 2px #ffff99;
+	background-color: #ffffff;
+}
+
+form {
+	background-color: rgba(255, 255, 153, 0.7);
+	padding: 2% 0 2% 0;
+	border-radius: 25px;
+	width: 25%;
+	margin: 0 0 0 40%;
+}
 	
 
 /* Style rules for footer content */
