@@ -218,6 +218,7 @@ fieldset, input, select, textarea {
 	padding: 2%;
 }
 
+
 #ca, #tx, #ny {
 	color: #000;
 	text-decoration: none;
@@ -234,17 +235,20 @@ fieldset, input, select, textarea {
 .third, .event {
   width: 350px;
   float: left;
-  text-align: center;}
+  text-align: center;
+  }
   
 .third, .sessions {
   width: 350px;
   float: left;
-  text-align: center;}
+  text-align: center;
+  }
 
 .third, .details {
   width: 350px;
   float: left;
-  text-align: center;}
+  text-align: center;
+  }
   
 .third p {
   padding: 0 20px 0 20px;
@@ -277,10 +281,23 @@ input {
 
 form {
 	background-color: rgba(255, 255, 153, 0.7);
-	padding: 2% 0 2% 0;
+	padding: 2% 2% 2% 2%;
 	border-radius: 25px;
 	width: 25%;
 	margin: 0 0 0 40%;
+}
+
+#register {
+	padding: 0 2% 2% 4%;
+}
+main h3 a {
+	text-decoration: none;
+	color: #ffff99;
+}
+
+main h3 a:hover {
+	color: #000;
+	background-color: rgba(255, 255, 153, 0.7);
 }
 
 /* Style rules for footer content */
@@ -439,4 +456,5 @@ main p {
 	}
 	
 }
+
 
