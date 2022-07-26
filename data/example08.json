@@ -1,0 +1,43 @@
+{
+	"CA"; [
+	{
+		"time": "9.00",
+		"title": "Intro to Gardening"
+	},
+	{
+		"time": "10.00",
+		"title": "Planting Dahlias"
+	},
+	{
+		"time": "11.30",
+		"title": "Weeding and Fertilizers"
+	}
+},
+	"TX"; [
+	{
+		"time": "10.00",
+		"title": "Dahlia Varities"
+	},
+	{
+		"time": "11.00",
+		"title": "Dahlia Care"
+	},
+	{
+		"time": "13.00",
+		"title": "Tuber Preservation Techniques"
+	}
+	},
+	"NY"; [
+	{
+		"time": "8.00",
+		"title": "Intro to Gardening"
+	},
+	{
+		"time": "9.00",
+		"title": "Dahlia Varieties"
+	},
+	{
+		"time": "10.30",
+		"title": "Raising and Selling Dahlias"
+	}
+}
