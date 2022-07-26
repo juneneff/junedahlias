@@ -64,7 +64,7 @@ nav li:first-child {
 nav li a {
 	display: block;
 	color: #fff;
-	padding: 0.5em 1em;
+	padding: 0.5em 0.5em;
 	text-decoration: none;
 }
 
@@ -182,19 +182,6 @@ figcaption {
 	text-shadow: 2px 2px #ffdf99;
 }
 
-/*Style for loop*/
-
-#answer {
-	margin: 0 0 0 40%;
-	text-align: center;
-	width: 20%;
-	background-color: rgba(223, 233, 225, 0.5);
-	border-top: 3px solid #ffff99;
-	border-bottom: 3px solid #ffff99;
-	padding: 2%;
-	
-}
-
 /*CHAPTER 4 Style for loop*/
 #answer {
 	margin: 0 0 0 40%;
@@ -221,6 +208,49 @@ fieldset, input, select, textarea {
 	border-bottom: 3px solid #ffff99;
 	
 }
+
+/*CHAPTER 8 Style for Locations*/
+#container {
+	padding: 2%;
+}
+
+#container img {
+	padding: 2%;
+}
+
+#ca, #tx, #ny {
+	color: #000;
+	text-decoration: none;
+	padding: 0 14% 0 0;
+	font-family: 'Source Code Pro', mono space;
+	font-weight: bold;
+}
+
+#sessions {
+	font-family: 'Spartan', sans-serif;
+	padding: 2%;
+}
+
+.third, .event {
+  width: 350px;
+  float: left;
+  text-align: center;}
+  
+.third, .sessions {
+  width: 350px;
+  float: left;
+  text-align: center;}
+
+.third, .details {
+  width: 350px;
+  float: left;
+  text-align: center;}
+  
+.third p {
+  padding: 0 20px 0 20px;
+  margin: 40px 0 20px 0;
+  text-align: left;
+  line-height: 1.4em;}
 
 fieldset em {
 	text-decoration: underline;
@@ -252,7 +282,6 @@ form {
 	width: 25%;
 	margin: 0 0 0 40%;
 }
-	
 
 /* Style rules for footer content */
 footer {
@@ -410,3 +439,4 @@ main p {
 	}
 	
 }
+
