@@ -7,4 +7,4 @@ while (i < 10) {
 	i++;
 }
 
-document.getElementById('answer').innerHTML = msg;
+document.getElementById('ans').innerHTML = msg;
