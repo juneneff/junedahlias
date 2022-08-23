@@ -42,17 +42,23 @@
 			<h4>Email me at <a href="mailto:junedahlias@outlook.com" class="contact-email-link">junedahlias@outlook.com</a></h4>
 			<h4>Give us some info about how to contact you and what you're interested in:</h4>
 			
-			<h2 id="noteName">If you'd rather leave us a voice message, we made it easy for you to do so below!</h2>
-			<form>
-			<label for="bio">Add a short bio to tell us something about yourself (up to 140 characters)</label>
-			<textarea name="bio" id="bio" rows="5" cols="24"></textarea>
-			<span id="bio-count" class="hide"></span>
-			</div>
-			</form>
-			       </div>
-					<script src="js/utilities.js"</script>
-					<script src="js/textarea-counter.js"></script>
-					<script src="js/jquery.js"></script>
+			<div>
+		<form id="register" action="register.php" method="post">
+		<h2>Register</h2>
+		<label for="name">Username</label><input type="text" id="name" name="name" />
+		<label for="pwd">Password</label><input type="password" id="pwd" name="pwd" />
+		<label for="email">Email</label><input type="email" id="email" name="email" />
+		<label for="bio">Add a short bio to tell us something about yourself (up to 140 characters)</label>
+		<textarea name="bio" id="bio" rows="5" cols="24"></textarea>
+		<span id="bio-count" class="hide"></span>
+		<input type="submit" value="join" />
+		</form>
+		</div>
+		<script src="js/jquery-1.11.0.min.js"></script>
+		<script src="js/jq-post.js"></script>
+		<script src="js/utilities.js"</script>
+		<script src="js/textarea-counter.js"></script>
+		
 		
 	</div>
 		
