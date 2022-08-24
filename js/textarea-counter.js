@@ -1,28 +1,37 @@
 (function () {
-  var bio      = document.getElementById('bio'),        // <textarea> element
-  var bioCount = document.getElementById('bio-count');  // Character count el
+  var bio = $('#bio');
+  var bioCounter = $('#bio-count');
 
-  addEvent(bio, 'focus', updateCounter);       // Call updateCounter() on focus
-  addEvent(bio, 'input', updateCounter);       // Call updateCounter() on input
+  // show the counter when the field is focused and update the class
+  // depending on amount of characters left
+  bio.on('focus', updateCounter);
+  bio.on('keyup', updateCounter);
 
-  addEvent(bio, 'blur', function () {          // On leaving the element
-    if (bio.value.length <= 140) {             // If bio is not too long
-      bioCount.className = 'hide';             // Hide the counter
+  // when we leave the textarea, we hide the counter unless there are too
+  // many characters
+  bio.on('blur', function () {
+    if (bioCounter.text() >= 0) {
+      bioCounter.addClass('hide');
     }
   });
 
+
   function updateCounter(e) {
-    var target = e.target || e.srcElement;      // Get the target of the event
-    var count = 140 - target.value.length;      // How many characters are left
-    if (count < 0) {                            // If less than 0 chars free
-      bioCount.className = 'error';             // Add class of error
-    } else if (count <= 15) {                   // If less than 15 chars free
-      bioCount.className = 'warn';              // Add class of warn
-    } else {                                    // Otherwise
-      bioCount.className = 'good';              // Add class of good
+    var count = 140 - bio.val().length;
+    var status = '';
+    if (count < 0) {
+      status = 'error';
+    } else if (count <= 15) {
+      status = 'warn';
+    } else {
+      status = 'good';
     }
-    var charMsg = '<b>' + count + '</b>' + ' characters'; // Message to display
-    bioCount.innerHTML = charMsg;               // Update the counter element
+
+    // remove previous classes
+    bioCounter.removeClass('error warn good hide');
+    // add new class
+    bioCounter.addClass(status);
+    bioCounter.text(count);
   }
 
 }());
